@@ -13,7 +13,6 @@ public class Menu {
 		System.out.println("=2. 상점가기=");
 		System.out.println("=3. 시장가기=");
 		System.out.println("==============");
-		System.out.println("하고싶은 일을 골라주세요 ====>");
 	}
 	private void inventoryTitle() {
 		System.out.println(" 인벤토리창");
@@ -46,6 +45,22 @@ public class Menu {
 	}
 	private void mainMenu() {
 		boolean b = false;
+		do {
+			 mainTitle();
+	         System.out.println("하고싶은 일을 골라주세요 ====>");
+	         int job = sc.nextInt();
+	         switch (job) {
+	         case 1:
+	            Menu();
+	            break;
+	         case 2:
+	            Menu();
+	            break;
+	         case 3:
+	            b = true;
+	            System.out.println("시스템 종료");
+	            break;
+		}
 		
 		
 			
